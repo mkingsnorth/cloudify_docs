@@ -84,7 +84,7 @@ Cloudify is a volumetric effect, so for best results:
 - Eevee works, but may show lower detail.
   
 
-1. Adjust the Voxel Size
+5. Adjust the Voxel Size
 ------------------------
 
 .. image:: /_static/voxel_size.jpg
@@ -130,8 +130,8 @@ For creative shaping, explore:
 - **Proportions (X/Y/Z)** for directional stretching
 
 
-Customise
-==================
+1. Customise (Optional)
+------------------------------------
 
 It is highly recommended that you explore altering the noise setup to get different displacement effects.
 The modifier uses Blender 5’s new Closure system so you can add new noise types:
