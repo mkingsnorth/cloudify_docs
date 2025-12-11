@@ -19,7 +19,7 @@ How to Bake
 5. Choose an output folder where you want the ``.vdb`` file saved.  
 6. Press **Bake**.
 
-Blender will generate the volume and save the result as an OpenVDB file. In the output folder, the VDB file is located in the *Blobs* subfolder
+Blender will generate the volume and save the result as an OpenVDB file. In the output folder, the VDB file is located in the *blobs* subfolder
 
 Tips:
 
