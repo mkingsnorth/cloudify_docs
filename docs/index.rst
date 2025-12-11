@@ -95,5 +95,6 @@ Email **info@configurate.net** if you have any questions or issues.
    get_started
    Controls <controls>
    how_it_works
+   customisation
    exporting
    contact
