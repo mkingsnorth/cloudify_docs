@@ -19,13 +19,15 @@ What is Cloudify?
 
     <br><br>
 
-`Cloudify <https://blendermarket.com/products/cloudify/?ref=361>`_ is a **Geometry Nodes–based modifier** that transforms any watertight 3D object
-into a fully volumetric cloud right inside Blender 5. Good for creating cloud or snow-like
-3D effects.
 
-It's a demonstration setup showcasing Blender’s new **Grid system** — designed for you
-to study, repurpose, or adapt for your own creative experiments.
+`Cloudify <https://blendermarket.com/products/cloudify/?ref=361>`_ is a Geometry Nodes–based volumetric modifier for Blender 5.0 and later.
+It converts closed (watertight) meshes into controllable volumetric clouds using
+Blender’s new Grid and Volume Displacement systems.
 
+This project is intended for **experienced Blender users** who want fine-grained
+control over volumetric effects or who wish to study and adapt modern grid-based
+volume workflows. Cloudify is provided as a fully editable demonstration setup,
+not as a one-click “make clouds” solution.
 
 .. image:: /_static/car.jpg
    :alt: Cloudify Logo
@@ -35,22 +37,53 @@ to study, repurpose, or adapt for your own creative experiments.
 
     <br><br>
 
-Features
--------------
 
-- **Non-destructive modifier:** Works like any other Blender modifier — mix it on top of
-  Subdivision, Displace, Remesh, etc.
+Purpose and Scope
+-----------------
 
-- **Procedural volume generation:** Converts meshes into density grids and displaces them using
-  layered noise fields.
+Cloudify serves two primary purposes:
 
-- **Fully editable:** Tweak voxel size, noise scale, and displacement strength for variations.
+- As a practical tool for generating procedural volumetric clouds and effects
+- As a reference implementation demonstrating Blender 5’s Grid architecture
 
-- **Example setups:** Use it as a learning resource or foundation for your own volumetric
-  workflows.
+Users are encouraged to explore the node tree, modify it, and repurpose parts of
+the system in their own projects.
 
-- **VDB Export:** The node tree contains a “Bake” node for exporting the volume as a VDB.
+What Cloudify Is
+----------------
 
+Cloudify is:
+
+- A non-destructive modifier-style Geometry Nodes setup
+- Fully procedural and parameter-driven
+- Compatible with standard modifier stacks
+- Capable of exporting OpenVDB volumes
+- Designed for experimentation, learning, and production workflows
+
+What Cloudify Is Not
+--------------------
+
+Cloudify is not:
+
+- A beginner-friendly volumetric preset
+- A real-time cloud simulation system
+- Optimised for low-spec hardware
+- Intended to hide Blender’s volumetric complexity
+
+Users unfamiliar with Geometry Nodes or volumetric concepts are strongly
+encouraged to watch the accompanying :ref:`tutorial video <tut_vis>` and :ref:`volume displacement video <how_it_works>` before diving in.
+
+Requirements
+------------
+
+Cloudify requires:
+
+- Blender 5.0 or later
+- Cycles renderer (recommended)
+- A system capable of handling volumetric grids
+
+
+.. _tut_vis:
 
 Watch the Tutorial
 --------------------------------------
@@ -64,7 +97,9 @@ explaining the setup and workflow behind this modifier.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1wtgED5sqFs?si=8T2wnpaGgRkiVZNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-How it works Video
+.. _how_it_works:
+
+Volume Displacement Video
 --------------------------------------
 
 Link: `Free Tutorial Video <https://youtu.be/fPFsNWzlxzk>`_
@@ -97,4 +132,5 @@ Email **info@configurate.net** if you have any questions or issues.
    how_it_works
    customisation
    exporting
+   Troubleshooting <troubleshooting>
    contact
